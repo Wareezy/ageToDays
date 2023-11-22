@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0; 
+    
+    /* Set flex-direction to column to display items vertically or underneath one another */
+    flex-direction: column;
+}
+
+#header1 {
+    text-align: center;
+    color: #333;
+}
+
+input[data-input], input[data-display] {
+/* Make input elements block-level */
+    display: block; 
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    font-size: 16px;
+}
+
+button[data-calc] {
+    /* Make button block-level */
+    display: block; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button[data-calc]:hover {
+    background-color: #2980b9;
+}
+
+span[data-display] {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* This is code that deals with the responsive styles */
+@media screen and (min-width: 600px) {
+    input[data-input] {
+        width: 50%;
+    }
+}
